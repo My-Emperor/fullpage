@@ -1,0 +1,552 @@
+html, body, .section {
+  min-height: 600px;
+  min-width: 1000px;
+  /* 最小的宽度和高度 防止 缩放过于变形 */
+}
+
+//修改右侧指示栏颜色
+#fp-nav ul li a span {
+  background-color: #F9A369 !important;
+}
+
+.go {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 99;
+}
+.next{
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  z-index: 99;
+  animation: ani_next 1s linear infinite;
+}
+
+//section1
+.section1 {
+  background: #fadd67 url("../image/t1fpyqfltdxxaiulhh-990-600.png") no-repeat center bottom;
+  position: relative;
+
+  .fly_tab {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    animation: ani_fly 4s linear infinite;
+  }
+
+  .sofa {
+    position: absolute;
+    bottom: 350px;
+    left: 50%;
+    margin-left: -200px;
+    animation: ani_sofa 3.2s linear infinite;
+  }
+
+  .goods {
+    position: absolute;
+    left: 50%;
+    margin-left: -420px;
+    bottom: 150px;
+  }
+}
+
+//section2
+.section2 {
+  position: relative;
+  background: rgb(132, 162, 212) url("../image/t1zdgpfi8exxca6rfn-2000-600.png") no-repeat center bottom;
+
+  .search_blo {
+    display: none;
+    position: absolute;
+    bottom: 300px;
+    right: 50%;
+    margin-right: -111px;
+  }
+
+  .search_hid {
+    display: none;
+    position: absolute;
+    bottom: 300px;
+    right: 50%;
+    margin-right: -525px;
+
+    .search_work {
+      position: absolute;
+      bottom: 10px;
+      right: 14%;
+      opacity: 0;
+    }
+  }
+
+  .sofas {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: 100px; //-220px
+    bottom: 212px;
+    height: 50px;
+  }
+
+  .text_hid {
+    display: block;
+    position: absolute;
+    bottom: 575px;
+    left: 50%;
+    margin-left: -185px;
+  }
+
+  .text_blo {
+    position: absolute;
+    bottom: 575px;
+    left: 50%;
+    margin-left: -185px;
+    opacity: 0;
+  }
+
+  .selSofa {
+    display: none;
+    position: absolute;
+    height: 84px;
+    bottom: 340px;
+    left: 50%;
+    margin-left: -108px;
+    z-index: 99;
+  }
+
+  .cover2 {
+    display: none;
+    position: absolute;
+    height: 75px;
+    width: 106px;
+    bottom: 340px;
+    left: 50%;
+    margin-left: -108px;
+    z-index: 88;
+    background-color: #fff;
+  }
+}
+
+//section3
+.section3 {
+  position: relative;
+  background-color: #EF674D;
+
+  .selGoods {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    margin-left: -480px;
+  }
+
+  .selSofaIn {
+    display: none;
+    position: absolute;
+    bottom: 375px;
+    left: 50%;
+    margin-left: -220px;
+  }
+
+  .selSize_hid {
+    position: absolute;
+    bottom: 310px;
+    left: 50%;
+    margin-left: 54px;
+
+  }
+
+  .selSize_blo {
+    position: absolute;
+    bottom: 310px;
+    left: 50%;
+    margin-left: 54px;
+    z-index: 99;
+    opacity: 0;
+  }
+
+  .btn_hid {
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    margin-left: 60px;
+  }
+
+  .btn_blo {
+    position: absolute;
+    bottom: 190px;
+    left: 50%;
+    margin-left: 60px;
+    z-index: 99;
+    opacity: 1;
+  }
+
+  .shop_sofa {
+    display: none;
+    position: absolute;
+    bottom: 345px;
+    left: 50%;
+    margin-left: -216px;
+    z-index: 88;
+  }
+
+  .cover3 {
+    display: none;
+    position: absolute;
+    width: 230px;
+    height: 180px;
+    bottom: 368px;
+    left: 50%;
+    margin-left: -232px;
+    background-color: #fff;
+  }
+}
+
+//section4
+.section4 {
+  position: relative;
+  background: #FFEEDD url("../image/t1iresfnxaxxca6rfn-2000-600.png") no-repeat center bottom;
+
+  .cloud {
+    position: absolute;
+    bottom: 650px;
+    left: 50%;
+    margin-left: 100px;
+    animation: ani_cloud 30s linear infinite;
+  }
+
+  .shop_car {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    margin-left: -265px;
+  }
+
+  .car {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: 0;
+    z-index: 100;
+
+  }
+
+  .shop_sofaIn {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 200px;
+    margin-left: 175px;
+    z-index: 99;
+  }
+
+  .address {
+    position: absolute;
+    bottom: 188px;
+    left: 50%;
+    margin-left: -155px;
+    opacity: 0;
+
+  }
+
+  .info {
+    position: absolute;
+    bottom: 350px;
+    left: 50%;
+    margin-left: -90px;
+    opacity: 0;
+  }
+
+  .shop_text_hid {
+    position: absolute;
+    bottom: 500px;
+    left: 50%;
+    margin-left: -235px;
+  }
+
+  .shop_text_blo {
+    position: absolute;
+    bottom: 500px;
+    left: 50%;
+    margin-left: -232px;
+    z-index: 99;
+    opacity: 0;
+  }
+}
+
+
+//section5
+.section5 {
+  position: relative;
+  background: url("../image/t1yisqfa4exxa3gmkg-2000-1500.png");
+
+  .overFlow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .pay_hand {
+      position: absolute;
+      bottom: -240px;
+      left: 50%;
+      margin-left: 275px;
+      z-index: 88;
+    }
+
+    .mouse_hid {
+      position: absolute;
+      bottom: 200px;
+      left: 50%;
+      margin-left: 300px;
+    }
+
+    .mouse_blo {
+      position: absolute;
+      bottom: 200px;
+      left: 50%;
+      margin-left: 300px;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+
+
+  .pay_card {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    margin-left: -450px;
+    z-index: 12;
+  }
+
+  .pay_order {
+    position: absolute;
+    bottom: 255px;
+    left: 50%;
+    margin-left: -318px;
+  }
+
+  .pay_sofa {
+    display: none;
+    position: absolute;
+    bottom: 800px;
+    left: 50%;
+    margin-left: -350px;
+    z-index: 11;
+  }
+
+  .pay_sofa2 {
+    display: none;
+    position: absolute;
+    bottom: 230px;
+    left: 50%;
+    margin-left: -350px;
+    z-index: 11;
+
+  }
+
+  .pay_word {
+    //display: none;
+    position: absolute;
+    bottom: 635px;
+    left: 50%;
+    margin-left: -495px;
+    opacity: 0;
+  }
+}
+
+//section6
+.section6 {
+  position: relative;
+  background: #85D9ED url("../image/t1dvj.fn0gxxb0_fua-2500-600.png") no-repeat 25% 100%;
+  //.pack_sofa{
+  //position: absolute;
+  //bottom: 300px;
+  //left: 50%;
+  //margin-left: -350px;
+  //position: absolute;
+  //    bottom: 600px;
+  //    left: 50%;
+  //    width: 70px;
+  //    margin-left: -80px;
+  //}
+  .box {
+    display: none;
+    position: absolute;
+    bottom: 600px;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 12;
+    //  -100px
+  }
+
+  .pack_car {
+    z-index: 15;
+
+    .car {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      margin-left: -207px;
+      z-index: 15;
+    }
+
+    .addr {
+      position: absolute;
+      bottom: 125px;
+      left: 50%;
+      margin-left: 30px;
+      opacity: 0;
+    }
+  }
+
+  .cloud6 {
+    position: absolute;
+    bottom: 700px;
+    left: 50%;
+    margin-left: -780px;
+    animation: ani_cloud6 35s linear infinite;
+  }
+
+  .man {
+    position: absolute;
+    bottom: 54px;
+    right: 800px;
+    width: 50px;
+    z-index: 9;
+    opacity: 0;
+    //bottom: 116px;
+    //right: 500px;
+  }
+
+  .women {
+    position: absolute;
+    bottom: 116px;
+    right: 300px;
+    width: 40px;
+    opacity: 0;
+    //bottom: 116px;
+    //right: 400px;
+    z-index: 10;
+  }
+
+  .pack_text {
+    display: none;
+    position: absolute;
+    bottom: 600px;
+    left: 0;
+  }
+
+  .shouhuo {
+    position: absolute;
+    bottom: 410px;
+    right: 565px;
+    display: none;
+  }
+
+  .door {
+    display: none;
+    position: absolute;
+    bottom: 116px;
+    right: 284px;
+    //bottom: 116px;
+    //right: 400px;
+    z-index: 9;
+  }
+}
+
+//secruib7
+.section7{
+  position: relative;
+  background: url("../image/t1wf1tfctaxxa3gmkg-2000-1500.png") no-repeat center bottom;
+  .star{
+    position: absolute;
+    bottom: 439px;
+    left: 50%;
+    width: 0;
+    height: 20px;
+    margin-left: -295px;
+    background: url("../image/star.png") no-repeat;
+    background-size: 97px;
+  }
+  .good{
+    position: absolute;
+    bottom: 385px;
+    left: 50%;
+    margin-left: -280px;
+    opacity: 0;
+  }
+}
+
+
+//section5 文字动画
+.ani_words {
+  animation: ani_words5 2s forwards;
+  /* animation-fill-mode: forwards;  让我们的动画保持最后一帧状态 不循环 */
+}
+
+//定义动画
+//fly_tab
+@keyframes ani_fly {
+
+  50% {
+    top: 19%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes ani_sofa {
+  50% {
+    bottom: 280px;
+  }
+  100% {
+    bottom: 350px;
+  }
+}
+
+//云朵cloud
+@keyframes ani_cloud {
+  0% {
+    margin-left: 100px;
+  }
+  50% {
+    margin-left: -800px;
+  }
+  100% {
+    margin-left: 100px;
+  }
+}
+
+//pay文字动画
+@keyframes ani_words5 {
+  100% {
+    opacity: 1;
+    transform: translateZ(100px) rotateY(360deg);
+  }
+}
+//section6 cloud
+@keyframes ani_cloud6 {
+  0% {
+    margin-left: -780px;
+  }
+  50% {
+    margin-left: 268px;
+  }
+  100% {
+    margin-left: -780px;
+  }
+}
+@keyframes ani_next {
+  0% {
+    bottom: 10%;
+  }
+  50% {
+    bottom: 8%;
+  }
+  100% {
+    bottom: 10%;
+  }
+}
